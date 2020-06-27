@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/idImagen"
+        android:layout_width="358dp"
+        android:layout_height="163dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/ic_launcher">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/idName"
+        android:layout_width="246dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:paddingTop="5dp"
+        android:text="Name"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/idInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/cardview_light_background"
+        android:paddingTop="8dp"
+        android:text="Cargo/Puesto"
+        android:textSize="15dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/sexMember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/cardview_light_background"
+        android:paddingTop="5dp"
+        android:text="Sexo: "
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/dateMember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/cardview_light_background"
+        android:paddingTop="5dp"
+        android:text="Fecha de nacimiento: "
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/directionMember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/cardview_light_background"
+        android:paddingTop="5dp"
+        android:text="Ubicación: "
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/getBack"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="100dp"
+        android:background="@color/cardview_dark_background"
+        android:onClick="onClick"
+        android:text="GET BACK"
+        android:textColor="@color/cardview_light_background"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/map"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="-49dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/cardview_dark_background"
+        android:onClick="onClick"
+        android:text="GO TO MAP"
+        android:textColor="@color/cardview_light_background"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/addDate"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:background="@color/cardview_dark_background"
+        android:onClick="onClick"
+        android:text="ADD BIRTH DATE"
+        android:textColor="@color/cardview_light_background"
+        android:textStyle="bold" />
+
+</LinearLayout>

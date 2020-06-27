@@ -5,59 +5,72 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/background_light"
-    android:orientation="vertical"
     android:gravity="center_horizontal"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/Logo"
-        android:layout_width="275dp"
-        android:layout_height="235dp"
+        android:layout_width="297dp"
+        android:layout_height="262dp"
         android:layout_marginTop="20dp"
         android:contentDescription="@string/app_name"
         app:srcCompat="@drawable/santodomingoindustries" />
 
     <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
         android:id="@+id/user"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="15dp"
         android:drawableLeft="@drawable/user"
-        android:inputType="text"
-        android:hint=" Ingrese su usuario"/>
+        android:hint=" Ingrese su usuario"
+        android:inputType="text" />
 
     <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
-        android:layout_gravity="center_horizontal"
-        android:inputType="textPassword"
         android:id="@+id/password"
-        android:layout_marginTop="15dp"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
         android:drawableLeft="@drawable/password"
         android:hint=" Ingrese su contraseña"
-        />
+        android:inputType="textPassword" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="50dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginHorizontal="@dimen/cardview_compat_inset_shadow">
+
 
     <Button
-        android:onClick="onClick"
-        android:layout_width="145dp"
-        android:id="@+id/login"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="10dp"
-        android:text="INICIAR SESIÓN" />
-
-    <Button
-        android:onClick="onClick"
-        android:layout_width="145dp"
-        android:layout_height="wrap_content"
         android:id="@+id/clear"
+        android:layout_width="170sp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="10dp"
-        android:text="BORRAR DATOS" />
+        android:background="#002d62"
+        android:onClick="onClick"
+        android:text="BORRAR DATOS"
+        android:textColor="@color/cardview_light_background"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="188sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#002d62"
+        android:onClick="onClick"
+        android:text="INICIAR SESIÓN"
+        android:textAlignment="center"
+        android:textColor="@color/cardview_light_background" />
+
+
+</LinearLayout>
 
 </LinearLayout>
